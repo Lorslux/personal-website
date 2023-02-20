@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bungee+Shade&display=swap");
+:root {
+  --second-color: #f9ceee;
+  --first-color: #ffdefa;
+  --main-title-font: "Bungee Shade", cursive;
+  --text-font: "Balsamiq Sans", cursive;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--first-color);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 25px;
+  background-color: #b9f3fc;
+  font-family: var(--main-title-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  border: 2px solid black;
+  max-width: 800px;
+  width: 100%;
+  margin: 35px;
+}
+
+.main-title {
+  font-size: 50px;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 800px;
+
+  /* border: 1px solid black; */
+}
+
+.presentation-card {
+  display: flex;
+  height: 50%;
+
+  justify-content: center;
+}
+
+.card-item {
+  border-radius: 30px;
+  border: 2px solid black;
+}
+
+.my-picture {
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(img/yo-paris.jpeg);
+  margin-right: 30px;
+}
+
+.about-me {
+  background-color: #c9f4aa;
+  width: 100%;
+  font-family: var(--text-font);
+  padding: 30px;
+  font-size: 18px;
+}
+
+.icons {
+  background-color: #fbc6a4;
+  display: flex;
+  margin-top: 35px;
+  border: 2px solid black;
+  border-radius: 60px;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  transition: 0.2s all ease-out;
+}
+
+.item-icon:hover {
+  transform: scale(1.2);
+}
+
+.git-icon {
+  background-image: url(img/github.png);
+}
+
+.linkedin-icon {
+  background-image: url(img/linkedin.png);
+}
+
+.my-projects {
+  max-width: 800px;
+  background-color: #fffbac;
+  padding: 30px;
+  margin-top: 35px;
+  border-radius: 45px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
+  height: 300px;
+  transition: 0.2s all ease-out;
+  border-radius: 45px;
+  border: 2px solid black;
+  margin: 10px;
+  transition: 0.2s all ease-out;
+}
+
+.project-item:hover {
+    transform: scale(1.05) rotate(-3deg);
+  }
+
+.rockpaperscissors{
+    background-image: url(img/rock-paper-scissors.png);
+}
+
+h1{
+    font-family: var(--text-font);
+    font-size: 3rem;
+    
+}
+
+footer{
+ background-color: #FFAACF;
+  border-radius: 45px;
+  border: 2px solid black;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  font-family: var(--text-font);
+  font-size: 18px;
+}
